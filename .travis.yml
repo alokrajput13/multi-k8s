@@ -15,7 +15,7 @@ after_success:
   - docker build -t alokrajput13/multi-worker ./worker
 
   #Login to dockerCLI
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --passsword-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Push build images to docker hub
   - docker push alokrajput13/multi-client
   - docker push alokrajput13/multi-nginx
