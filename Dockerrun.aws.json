@@ -14,7 +14,7 @@
       "essential": false
     },
     {
-      "name": "client",
+      "name": "worker",
       "image": "alokrajput13/multi-worker",
       "hostname": "worker",
       "essential": false
